@@ -2,7 +2,7 @@
   "name": "user_bot",
   "version": "1.0.0",
   "description": "LiveChat Bot, user side",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src",
     "eslint:dump": "eslint --print-config ./.eslintrc.json",
@@ -17,6 +17,7 @@
     "typescript": "^5.4.2"
   },
   "dependencies": {
+    "@jolysnow/nodetelebot": "^1.0.5",
     "axios": "^1.6.7",
     "dotenv": "^16.4.5",
     "node-telegram-bot-api": "^0.64.0"

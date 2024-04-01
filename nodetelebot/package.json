@@ -1,0 +1,24 @@
+{
+  "name": "@jolysnow/nodetelebot",
+  "version": "1.0.5",
+  "description": "Framework for telegram bot api",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc -p ./tsconfig.json"
+  },
+  "keywords": [
+    "node",
+    "telegram",
+    "bot"
+  ],
+  "author": "MAI",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.65.1",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.64.6"
+  }
+}

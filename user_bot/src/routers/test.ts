@@ -1,5 +1,4 @@
-import { Router } from "../models/router";
-import { Text } from "../models/filters/text";
+import { Router, Text } from "@jolysnow/nodetelebot";
 import { sendToAdmin } from "../utils/send_to_admin";
 import TelegramBot, { CallbackQuery, Message } from "node-telegram-bot-api";
 import { inline } from "../keyboards/educational_level";
@@ -18,4 +17,4 @@ test.callbackQuery(async (data: { msg: CallbackQuery; bot: TelegramBot }) => {
   sendToAdmin(msg.data!);
 });
 
-module.exports = test;
+export { test };

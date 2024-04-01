@@ -9,19 +9,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const router_1 = require("../models/router");
-const text_1 = require("../models/filters/text");
+exports.test = void 0;
+const nodetelebot_1 = require("@jolysnow/nodetelebot");
 const send_to_admin_1 = require("../utils/send_to_admin");
 const educational_level_1 = require("../keyboards/educational_level");
-const test = new router_1.Router();
+const test = new nodetelebot_1.Router();
+exports.test = test;
 test.text((data) => __awaiter(void 0, void 0, void 0, function* () {
     const { msg, bot } = data;
     yield bot.sendMessage(msg.chat.id, msg.text, educational_level_1.inline);
-}), new text_1.Text("test"));
+}), new nodetelebot_1.Text("test"));
 test.callbackQuery((data) => __awaiter(void 0, void 0, void 0, function* () {
     const { msg, bot } = data;
     console.log(msg);
     bot.answerCallbackQuery(msg.id, {});
     (0, send_to_admin_1.sendToAdmin)(msg.data);
 }));
-module.exports = test;
