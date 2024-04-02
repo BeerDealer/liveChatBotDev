@@ -1,4 +1,6 @@
 {
   "cSpell.words": ["Tele"],
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "editor.formatOnSave": true,
+  "notebook.formatOnSave.enabled": true
 }

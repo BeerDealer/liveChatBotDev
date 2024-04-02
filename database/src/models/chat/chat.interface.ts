@@ -1,5 +1,8 @@
+import { ObjectId } from "mongoose";
+import { IMessage } from "../message/message.interface";
+
 export interface IChat {
-  moderator: string;
-  user: string;
-  messages: Array<{ sender: string; text: string; timestamp: number }>;
+  users: [ObjectId, ObjectId];
+  createdAt: Date;
+  messages: Array<IMessage>;
 }
