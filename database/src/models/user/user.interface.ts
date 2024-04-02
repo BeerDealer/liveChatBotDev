@@ -1,7 +1,9 @@
+import { ObjectId } from "mongoose";
+
 export interface IUser {
   telegramId: string;
-  moderator: string;
-  chat: string;
+  moderator: ObjectId;
+  chat: ObjectId;
   userInfo: {
     referer: string;
     phoneNumber: string;
